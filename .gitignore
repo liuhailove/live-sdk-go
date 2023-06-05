@@ -14,3 +14,5 @@
 .idea/
 docs/
 bin/
+iml
+live-sdk-go.iml
