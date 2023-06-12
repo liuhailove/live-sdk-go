@@ -47,6 +47,7 @@ func newBaseParticipant(roomCallback *RoomCallback) *baseParticipant {
 	p := &baseParticipant{
 		audioTracks:  &sync.Map{},
 		videoTracks:  &sync.Map{},
+		tracks:       &sync.Map{},
 		roomCallback: roomCallback,
 		Callback:     NewParticipantCallback(),
 	}

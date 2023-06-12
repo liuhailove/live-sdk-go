@@ -1,7 +1,6 @@
 package live_sdk_go
 
 import (
-	"github.com/livekit/protocol/logger"
 	"go.uber.org/atomic"
 	"google.golang.org/protobuf/encoding/protojson"
 	"google.golang.org/protobuf/proto"

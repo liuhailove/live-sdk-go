@@ -2,7 +2,6 @@ package live_sdk_go
 
 import (
 	"github.com/livekit/mediatransportutil"
-	"github.com/livekit/protocol/logger"
 	"sync"
 
 	"github.com/livekit/protocol/livekit"

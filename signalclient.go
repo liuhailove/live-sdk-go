@@ -3,7 +3,6 @@ package live_sdk_go
 import (
 	"errors"
 	"fmt"
-	"github.com/livekit/protocol/logger"
 	"google.golang.org/protobuf/encoding/protojson"
 	"google.golang.org/protobuf/proto"
 	"io"

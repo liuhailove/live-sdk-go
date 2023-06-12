@@ -2,7 +2,6 @@ package live_sdk_go
 
 import (
 	"fmt"
-	"github.com/livekit/protocol/logger"
 	"sync"
 	"time"
 

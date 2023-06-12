@@ -2,7 +2,6 @@ package live_sdk_go
 
 import (
 	"github.com/livekit/protocol/livekit"
-	"github.com/livekit/protocol/logger"
 	"github.com/pion/webrtc/v3"
 	"sync"
 	"time"

@@ -3,7 +3,6 @@ package live_sdk_go
 import (
 	"context"
 	"github.com/livekit/protocol/livekit"
-	"github.com/livekit/protocol/logger"
 	"github.com/livekit/protocol/utils"
 	"github.com/pion/interceptor"
 	"github.com/pion/rtcp"

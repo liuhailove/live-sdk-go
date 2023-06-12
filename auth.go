@@ -26,6 +26,6 @@ func (b authBase) withAuth(ctx context.Context, grant auth.VideoGrant) (context.
 
 func newHeaderWithToken(token string) http.Header {
 	header := make(http.Header)
-	header.Set("Authorization", "Bearer"+token)
+	header.Set("Authorization", "Bearer "+token)
 	return header
 }
