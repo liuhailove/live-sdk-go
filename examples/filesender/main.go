@@ -52,7 +52,13 @@ func main() {
 		panic(err.(any))
 	}
 
-	file := "test.h264"
+	dir, err := os.Getwd()
+	if err != nil {
+		fmt.Println(err)
+	}
+
+	file := dir + "/examples/filesender/output.h264"
+	audioFile := dir + "/examples/filesender/output.ogg"
 	videoWidth := 960
 	videoHeight := 720
 	videoTrack, err2 := sdk.NewLocalFileTrack(
@@ -61,9 +67,12 @@ func main() {
 			fmt.Println("track finished")
 		}),
 	)
-	audioTrack, _ := sdk.NewLocalFileTrack("output.ogg")
 	if err2 != nil {
-		fmt.Println("123", err2.Error())
+		panic(err2.(any))
+	}
+	audioTrack, err3 := sdk.NewLocalFileTrack(audioFile)
+	if err3 != nil {
+		panic(err3.(any))
 	}
 
 	_, err1 := room.LocalParticipant.PublishTrack(videoTrack, &sdk.TrackPublicationOptions{
